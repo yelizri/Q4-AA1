@@ -1,0 +1,60 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 50%;
+    margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  align-items: center; /* Vertically center items */
+  justify-content: space-between;
+  background-color: rgb(236, 53, 135);
+  height: 50px;
+  position: relative; 
+  z-index: 2;  
+}
+
+.nav-b {
+    display: flex; /* flexbox for horizontal layout */
+  list-style: none;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.nav-b li {
+  display: flex;
+  align-items: center;
+}
+
+.nav-b li a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.nav-b li a:hover {
+  background-color: whitesmoke;
+  color: black; 
+  text-shadow: 2px 2px 5px gray; 
+}
+
+
+#button {
+    background-color: rgba(237, 131, 193, 0.8);
+    color: black;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}

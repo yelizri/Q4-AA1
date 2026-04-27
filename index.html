@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+<nav>
+  <ul class="nav-b">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="resources.html">Resources</a></li>
+    <li><a href="stories.html">Stories</a></li>
+    <li><a href="about.html">About Us</a></li>
+  </ul>
+  <!-- Search bar -->
+  <div class="search-container">
+    <input type="text" placeholder="Search...">
+    <button type="submit">Search</button>
+  </div>
+</nav>
+
+    <form name="myForm" onsubmit="return validateForm()">
+        <label for="fName">First Name:</label>
+        <input type="text" name="fName" required>
+        <span id="errorFName"></span> <br>
+
+        <label for="bDate">Birthdate: </label>
+        <input type="date" name="fBdate"> <br>
+        
+        
+        <input type="radio" name="sex" value="female"> 
+        <label for="sexF">female</label><br>
+        
+        <input type="radio" name="sex" value="male"> 
+        <label for="sexM">male</label><br>
+        <span id="errorSex"></span>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" required> <br>
+        <span id="errorEmail"></span>
+
+        <label for="userN">Username:</label>
+        <input type="text" name="userN" required> <br>
+        <span id="errorUserN"></span>
+
+        <label for="pass">Password:</label>
+        <input type="password" name="pass" required> <br>
+        <span id="errorPass"></span>
+
+        <label for="quest1">Which island/island group do you live in?</label>
+        <select name="quest1" required>
+            <option value="">--choose--</option>
+            <option value="luz">Luzon</option>
+            <option value="vis">Visayas</option>
+            <option value="min">Mindanao</option> <br>
+        </select>
+        <span id="errorQuest1"></span>
+
+        <label for="quest2">What kind of inequality have you witnessed?</label> <br>
+        <input type="checkbox" name="choices" value="GenderIn">
+        <label for="GenderIn">Gender Inequality</label> <br>
+        <input type="checkbox" name="choices" value="EconomicIn"> 
+        <label for="EconomicIn">Economic Inequality</label><br>
+        <input type="checkbox" name="choices" value="SocialIn"> 
+         <label for="SocialIn">Social Inequality</label><br>
+        <span id="errorQuest2"></span>
+
+        <label for="quest3">What kind of area do you live in?</label> <br>
+        <input type="radio" name="quest3" value="Urban" required>
+        <label for="Urban">Urban</label><br>
+        <input type="radio" name="quest3" value="Rural" required>
+        <label for="Rural">Rural</label><br>
+        <span id="errorQuest3"></span>
+
+        <input id="button" type="submit" name="submit" value="Fight Inequality with us!">
+        <span id="successMessage"></span>
+    </form>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
