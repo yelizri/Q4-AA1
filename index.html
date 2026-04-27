@@ -23,6 +23,7 @@
 </nav>
 
     <form name="myForm" onsubmit="return validateForm()">
+        //personal information
         <label for="fName">First Name:</label>
         <input type="text" name="fName" required>
         <span id="errorFName"></span> <br>
@@ -38,6 +39,7 @@
         <label for="sexM">male</label><br>
         <span id="errorSex"></span>
 
+        //account details
         <label for="email">Email:</label>
         <input type="email" name="email" required> <br>
         <span id="errorEmail"></span>
@@ -50,6 +52,7 @@
         <input type="password" name="pass" required> <br>
         <span id="errorPass"></span>
 
+        //topic questions
         <label for="quest1">Which island/island group do you live in?</label>
         <select name="quest1" required>
             <option value="">--choose--</option>
